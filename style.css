@@ -11,6 +11,7 @@ body{
   max-width: 375px;
   background: linear-gradient(#ffffff, #fff5f5);
   height: 100vh;
+  margin: auto;
   
 }
 
@@ -132,6 +133,10 @@ button:hover {
   left: 16%;
 }
 
+#desktop-girl {
+  display: none;
+}
+
 @media (min-width: 750px) {
   body{
     max-width: 1440px;
@@ -139,6 +144,7 @@ button:hover {
   .whole-thing{
     display: flex;
     background-image: url("https://liya-am.github.io/base-apparel/bg-pattern-desktop.svg");
+    justify-content: space-between;
   }
   .text-only{
     margin: 40px 100px auto 100px;
@@ -180,10 +186,11 @@ button:hover {
   #icon-error{
     left: 70%;
   }
-  .img-only{
-   flex-grow: 1;
+    
+  #desktop-girl{
+    display: block;
+    height: 100vh;
   }
-
   .girl{
     display: none;
   }
