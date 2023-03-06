@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  max-width: 375px;
+  background: linear-gradient(#ffffff, #fff5f5);
+  height: 100vh;
+  margin:auto;
+  
+}
+
+.logo{
+  margin: 25px;
+}
+
+#logo-img{
+  width: 90px;
+}
+
+.girl{
+  margin-bottom: 45px;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  margin: 3px;
+  color: #413a3a;
+}
+
+.we{
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.Hello{
+  margin: 30px;
+  margin-top: 15px;
+  font-weight: 400;
+  color: #ce9797;
+  opacity: 0.7;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.4rem;
+  
+}
+
+.email{
+  position: relative;
+}
+
+.email-add {
+  text-align: center;
+}
+
+input{
+  border-radius: 50px;
+  border-color: #ce9797;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #fff5f5;
+  opacity: 0.8;
+  height: 45px;
+  width: 80%;
+  padding: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  caret-color: #ce9797;
+}
+
+input::placeholder {
+  font-weight: 300;
+  opacity: 0.6;
+  color: #ce9797;
+}
+
+input:invalid {
+  border-color: #f96262;
+  border-width: 2px;
+}
+
+input:focus {
+  outline-color: #ce9797;
+}
+
+.abs{
+  position: absolute;
+  left: 75%; top:0;
+}
+
+button{
+  width: 60px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background: content-box linear-gradient(.25turn, #f8bfbf, #ee8c8c);
+  box-shadow: 2px 10px 15px 2px rgba(206, 151, 151, 0.43)
+}
+
+button:hover {
+  background: content-box linear-gradient(.25turn, #fff5f5, #f8bfbf)
+}
+
+.wrong {
+  font-size: 10px;
+  color: #f96262;
+  position: absolute;
+  left: 15%;
+  margin-top: 10px;
+}
+
+#icon-error {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  width: 20px
+}
+
+#submitted {
+  position: absolute;
+  top:0;
+  left: 16%;
+}
+
+#desktop-girl {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  body{
+    max-width: 1440px;
+  }
+  .whole-thing{
+    display: flex;
+    background-image: url("https://liya-am.github.io/base-apparel/bg-pattern-desktop.svg");
+    justify-content: space-between;
+  }
+  .text-only{
+    margin: 40px 100px auto 100px;
+  }
+  .logo{
+    margin: 10px 0 110px 0;
+  }
+  #logo-img{
+    width: 120px;
+  }
+  
+  .text{
+    align-items: normal;
+    font-size: 1.7rem;
+    width: 400px;
+    
+   
+  }
+  .Hello, .email-add{
+    text-align: left;
+    margin:0px;
+  }
+
+  .Hello{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #input {
+    width: 100%
+  }
+  
+  .abs {
+    left: 80%;
+  }
+  #btn {
+    width: 80px;
+  }
+  
+  #icon-error{
+    left: 70%;
+  }
+  #desktop-girl{
+    display: block;
+    height: 100vh;
+  }
+
+  .girl{
+    display: none;
+  }
+}
